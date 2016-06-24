@@ -239,7 +239,7 @@
 			width: 100%;
 			float: none;
 			position: absolute;
-			bottom: -10%;
+			bottom: -3%;
 			height: 10%;
 			margin: 0 0;
 		}
@@ -257,9 +257,11 @@
 		}
 
 		table{
-			width: 99%;
-			margin: 1% .5%;
+			width: 80%;
+			margin: 1% 10%;
+		}
+
+		td{
+			height: 160px;
 		}
 	}
-
-
