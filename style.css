@@ -238,6 +238,7 @@
 		.scoreBoard{
 			width: 100%;
 			float: none;
+			display: block;
 			position: absolute;
 			bottom: 0;
 			height: 10%;
