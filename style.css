@@ -223,7 +223,7 @@
 	}
 
 	/**  750 and below, make table full-width, scoreBoard display horizontally UNDER table, page scroll down  **/
-	@media (max-width: 750px){
+	@media (max-width: 750px)and (orientation: portrait) {
 
 		body{
 			font-size: 8px;
@@ -240,6 +240,50 @@
 			float: none;
 			position: absolute;
 			bottom: 0;
+			height: 10%;
+			margin: 0 0;
+		}
+
+		.scoreBoard article{
+			width: 30%;
+			margin: 0 1%;
+			padding: 1% 0;
+			display: inline-block;
+			font-size: 1.5em;
+		}
+
+		.scoreBoard h3{
+			font-size: 1.5em;
+		}
+
+		table{
+			width: 80%;
+			margin: 1% 10%;
+			position: relative;
+		}
+
+		td{
+			height: 60px;
+		}
+	}
+
+	@media (min-width: 750px) and (orientation: landscape) { 
+
+		body{
+			font-size: 8px;
+		}
+
+		h1{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 1%;
+		}
+
+		.scoreBoard{
+			width: 100%;
+			float: none;
+			position: absolute;
+			bottom: -10%;
 			height: 10%;
 			margin: 0 0;
 		}
