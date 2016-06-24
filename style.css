@@ -1,0 +1,265 @@
+/***********************
+
+*	WHOLE BODY SECTION
+
+***********************/
+
+	html{
+		background-color: white;
+	}
+
+	body{
+		font-size: 10px;
+		font-family: "Oswald";
+	}
+
+	h1, h3, h4, h5{
+		font-family: "Sanchez";
+		text-align: center;
+		font-size: 4em;
+	}
+
+	h1{
+		box-sizing: border-box;
+		width: 80%;
+		float: left;
+		font-size: 7em;
+		display: block;
+	}
+
+	h2{
+		font-family: "Sanchez";
+		font-size: 1.8em;
+	}
+
+	h3{
+		font-family: "Oswald";
+	}
+
+/***********************
+
+*	GAME BOARD SECTION
+
+***********************/
+
+	table{
+		text-align: center;
+		font-size: 4em;
+		float: left;
+		width: 78%;
+		margin: 2% 3.5%;
+		border-collapse: separate;
+		border-spacing: 10px;
+		table-layout:fixed;
+	}
+
+	td{
+		box-sizing: border-box;
+		font-family: "Oswald";
+		height: 180px;
+	    border-radius: 20%;
+	    background-color: #ccc;
+	    background-clip: padding-box;
+	}
+
+
+	.disabled{
+	}
+
+	.computer{
+		background-color: #70B6E5;
+		color: white;
+	}
+
+	.human{
+		background-color: #F9863E;
+		color: white;
+	}
+
+
+/***********************
+
+*	MODAL WINDOW SECTION
+
+***********************/
+
+	.window{
+		display: none;
+		position: fixed;
+	    z-index: 1;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    overflow: auto;
+	    background-color: rgb(0,0,0);
+	    background-color: rgba(0,0,0,0.8);
+	}
+
+	.content{
+		background-color: #fefefe;
+	    margin: 15% auto;
+	    border: 1px solid #888;
+	    width: 70%;
+	    text-align: center;
+	    font-size: 2em;
+	}
+
+	header{
+		width: 100%;
+		height: 11%;
+		background-color: #ccc;
+		border-bottom: 2px solid #AAA;
+		margin-bottom: 5%;
+	}
+
+	.content h2{
+		padding: 2% 0;
+		font-size: 3em;
+	}
+
+	.content h3{
+		font-size: 3em;
+		padding-bottom: 5%;
+	}
+
+
+	article button, article p{
+		display: inline;
+	}
+
+	p{
+		font-size: 2.5em;
+	}
+
+	button{
+		font-family: "Oswald";
+		font-size: 2em;
+		background-color: #E9E9E9;
+		-webkit-box-shadow: 1px 3px 5px 0px rgba(128,128,128,1);
+	    -moz-box-shadow: 1px 3px 5px 0px rgba(128,128,128,1);
+		box-shadow: 1px 3px 5px 0px rgba(128,128,128,1);
+		border: 1px solid #ccc;
+		margin: 0 2% 8% 2%;
+		padding: 0 5%;
+		height: 7%;
+	}
+
+
+/***********************
+
+*	SCOREBOARD SECTION
+
+***********************/
+
+	.scoreBoard{
+		box-sizing: border-box;
+		display: block;
+		float: left;
+		margin: 9% 0;
+		width: 15%;
+		text-align: center;
+		border-right: 1px solid black;
+	}
+
+	.tie{
+		background-color: #ccc;
+	}
+
+
+	.scoreBoard article{
+		margin: 15% 0 15% 0;
+		padding: 15% 0;
+		display: block;
+	}
+
+
+
+	.scoreBoard h3{
+		font-size: 2.7em;
+		padding-bottom: 5%;
+		text-decoration: underline;
+	}
+
+	.scoreBoard h5{
+		font-family: 'Anonymous Pro';
+		font-size: 4em;
+	}
+
+
+/***********************
+
+*	MEDIA QUERIES
+
+***********************/
+
+
+	/**  1250 and above, make table more narrow to stay square  **/
+	@media (min-width: 1250px){
+		body{
+			font-size: 12px;
+		}
+
+		table{
+			width: 60%;
+			margin: 2% 10% 0 10%;
+		}
+
+		.scoreBoard{
+			margin-top: .5%;
+			width: 20%;
+		}
+	}
+
+	/**  1050 and below, make scoreBoard font-size smaller  **/
+	@media (max-width: 1050px){
+		.scoreBoard h3{
+			font-size: 2em;
+		}
+
+		.scoreBoard h5{
+			font-size: 3em;
+		}
+	}
+
+	/**  750 and below, make table full-width, scoreBoard display horizontally UNDER table, page scroll down  **/
+	@media (max-width: 750px){
+
+		body{
+			font-size: 8px;
+		}
+
+		h1{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 1%;
+		}
+
+		.scoreBoard{
+			width: 100%;
+			float: none;
+			position: absolute;
+			bottom: -10%;
+			height: 10%;
+			margin: 0 0;
+		}
+
+		.scoreBoard article{
+			width: 30%;
+			margin: 0 1%;
+			padding: 1% 0;
+			display: inline-block;
+			font-size: 1.5em;
+		}
+
+		.scoreBoard h3{
+			font-size: 1.5em;
+		}
+
+		table{
+			width: 99%;
+			margin: 1% .5%;
+		}
+	}
+
+

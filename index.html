@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+		<link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.js"></script>
+		
+		<script type="text/javascript" src="freehand.js"></script>
+	</head>
+	<body>
+
+	<!-- Modal windows containing "Choose your symbol" and "Game over" messages and prompts -->
+
+	<section class="win window">
+			<div class="content">
+				<header><h2>Tic Tac Toe</h2></header>
+				<article>
+					<h3>You won</h3>
+					<button class="close">Congratulations!</button>
+					<!--<h3>Choose</h3>
+					<div>
+						<button></button>
+						<p>or</p>
+						<button></button>
+					</div>-->
+				</article>
+			</div>		
+		</section>
+
+		<section class="draw window">
+			<div class="content">
+				<header><h2>Tic Tac Toe</h2></header>
+				<article>
+					<h3>It's a draw</h3>
+					<button class="close">Rematch!</button>
+					<!--<h3>Choose</h3>
+					<div>
+						<button></button>
+						<p>or</p>
+						<button></button>
+					</div>-->		
+				</article>
+			</div>
+		</section>
+
+		<section class="lose window">
+			<div class="content">
+				<header><h2>Tic Tac Toe</h2></header>
+				<article>
+					<h3>You lost</h3>
+					<button class="close">Try again!</button>
+					<!--<h3>Choose</h3>
+					<div>
+						<button></button>
+						<p>or</p>
+						<button></button>
+					</div>-->		
+				</article>
+			</div>
+		</section>
+
+		<section class="choose window">
+			<div class="content">
+				<header><h2>Tic Tac Toe</h2></header>
+				<article>
+					<h3>Choose</h3>
+					<div>
+						<button id="X">X</button>
+						<p>or</p>
+						<button id="O">O</button>
+					</div>
+				</article>
+			</div>
+		</section>
+
+	
+	<!-- The Main Page -->
+
+		<section class="scoreBoard">
+			<article class="human">
+				<h3>You ( <span id="humanSymbol"></span> )</h3>
+				<h5 id="humanPoints">0</h5>
+			</article>
+			<article class="tie">
+				<h3>Draw</h3>
+				<h5 id="drawPoints">0</h5>
+			</article>
+			<article class="computer">
+				<h3>Computer ( <span id="computerSymbol"></span> )</h3>
+				<h5 id="computerPoints">0</h5>
+			</article>
+		</section>
+
+		<h1>Tic Tac Toe</h1>
+
+		<table>
+			<tr>
+				<td class="cell enabled" id="cell0" style="vertical-align:middle"></td>
+				<td class="cell enabled"  id="cell1" style="vertical-align:middle"></td>
+				<td class="cell enabled"  id="cell2" style="vertical-align:middle"></td>
+			</tr>			
+			<tr>
+				<td class="cell enabled"  id="cell3" style="vertical-align:middle"></td>
+				<td class="cell enabled"  id="cell4" style="vertical-align:middle"></td>
+				<td class="cell enabled"  id="cell5" style="vertical-align:middle"></td>
+			</tr>
+			<tr>
+				<td class="cell enabled"  id="cell6" style="vertical-align:middle"></td>
+				<td class="cell enabled"  id="cell7" style="vertical-align:middle"></td>
+				<td class="cell enabled"  id="cell8" style="vertical-align:middle"></td>
+			</tr>
+		</table>
+
+		
+		
+	</body>
+</html>
