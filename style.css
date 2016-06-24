@@ -279,34 +279,12 @@
 			margin-bottom: 1%;
 		}
 
-		.scoreBoard{
-			width: 100%;
-			float: none;
-			position: absolute;
-			bottom: -500%;
-			height: 10%;
-			margin: 0 0;
-		}
 
 		.scoreBoard article{
-			width: 30%;
-			margin: 0 1%;
-			padding: 1% 0;
-			display: inline-block;
 			font-size: 1.5em;
 		}
 
 		.scoreBoard h3{
 			font-size: 1.5em;
-		}
-
-		table{
-			width: 80%;
-			margin: 1% 10%;
-			position: relative;
-		}
-
-		td{
-			height: 60px;
 		}
 	}
