@@ -259,6 +259,7 @@
 		table{
 			width: 80%;
 			margin: 1% 10%;
+			position: relative;
 		}
 
 		td{
