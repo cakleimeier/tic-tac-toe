@@ -223,7 +223,7 @@
 	}
 
 	/**  750 and below, make table full-width, scoreBoard display horizontally UNDER table, page scroll down  **/
-	@media (max-width: 750px)and (orientation: portrait) {
+	@media (max-device-width: 750px)and (orientation: portrait) {
 
 		body{
 			font-size: 8px;
